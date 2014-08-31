@@ -5,17 +5,26 @@ public class ChessBoard {
 
     public final int LENGTH = 8;
     public final int WIDTH = 8;
+    public ChessSquare[][] squares;
 
     public ChessBoard(){
-        ChessSquare[][] squares = new ChessSquare[LENGTH][WIDTH];
+        squares = new ChessSquare[LENGTH][WIDTH];
 
-        for(int i = 0; i <= LENGTH; i++){
-            for(int j = 0; j <= WIDTH; j++){
+        for(int i = 0; i <= LENGTH - 1; i++){
+            for(int j = 0; j <= WIDTH - 1; j++){
                 squares[i][j] = new ChessSquare(i, j, null);
             }
         }
+
+        squares[0][1].piece = new Pawn(0, 1);
     }
 
-
+    public void printBoard(){
+        for(int i = 0; i <= squares.length - 1; i++){
+            for(int j = 0; j <= squares.length - 1; j++) {
+                squares[i][j].printPosition();
+            }
+        }
+    }
 
 }

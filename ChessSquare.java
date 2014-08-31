@@ -16,7 +16,19 @@ public class ChessSquare {
         return piece;
     }
 
-    public String getPosition() {
+    public String getPosition(){
         return posX + ", " + posY;
+    }
+
+    public int getPosX(){
+        return posX;
+    }
+
+    public int getPosY(){
+        return posY;
+    }
+
+    public void printPosition(){
+        System.out.format( "%c, %d\n", (posX + 'a'), (posY + 1) );
     }
 }

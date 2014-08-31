@@ -6,4 +6,6 @@ public class Rook extends ChessPiece {
     public Rook(int posX, int posY) {
         super(posX, posY);
     }
+
+
 }
