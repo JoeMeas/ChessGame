@@ -6,4 +6,9 @@ public class Bishop extends ChessPiece {
     public Bishop(int posX, int posY) {
         super(posX, posY);
     }
+
+    @Override
+    public String toString() {
+        return "B";
+    }
 }

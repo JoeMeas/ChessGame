@@ -11,15 +11,21 @@ public class Pawn extends ChessPiece {
     }
 
     public TreeSet<ChessSquare> validSquares(){
-        if(clear) {
-            if (starting) {
-                posX + 2;
-            }
-            posX + 1;
-        }
+//        if(clear) {
+//            if (starting) {
+//                posX + 2;
+//            }
+//            posX + 1;
+//        }
+        return null;
     }
 
-    public capture(){
+//    public capture(){
+//
+//    }
 
+    @Override
+    public String toString() {
+        return "P";
     }
 }

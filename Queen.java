@@ -6,4 +6,9 @@ public class Queen extends ChessPiece {
     public Queen(int posX, int posY) {
         super(posX, posY);
     }
+
+    @Override
+    public String toString() {
+        return "Q";
+    }
 }
