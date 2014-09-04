@@ -7,5 +7,8 @@ public class Rook extends ChessPiece {
         super(posX, posY);
     }
 
-
+    @Override
+    public String toString() {
+        return "R";
+    }
 }
